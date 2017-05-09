@@ -11,15 +11,13 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" media="screen and (min-width:500px)" href="over500.css">
-    <script type="text/javascript" src="js/jquery321.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
 <!-- The body tag contains the bulk of the HTML page, all of the structure of the page is defined within this tag. Notice the
 Bootstrap structure of container, row, column is utilized to define the outline of the page. The class "img-responsive" is another
 Bootstrap element allowing for responsive resizing of the referenced images-->
 <body>
  <div class="container-fluid">
-    <div class="row">
+    <header class="row">
       <div class="col-md-6">
             <div class="imagearrow"><img src="arrowpic.png" class="img-responsive" alt="Logo's logo"></div>
       </div>
@@ -29,24 +27,24 @@ Bootstrap element allowing for responsive resizing of the referenced images-->
       <div class="sub-header"> 
         <h2>Basic Front-end Skills Demo</h2>
         </div>
-    </div>
-      <div class="col-md-12" >
+    </header>
+      <nav class="col-md-12" >
         <div class="image"><img src="line.png" class="img-responsive" alt="line_pic">
       </div>
-      </div>
-    <div class="row">
+      </nav>
+    <aside class="row">
       <div class="col-md-12">
         <a data-target="#myModal" data-toggle="modal">
         <img src="profile5.png" class="img-responsive center-block" data-toggle="modal" data-target="project1" alt="profile pic">
         </a> 
      </div>
-    </div>
-    <div class="row"> 
+    </aside>
+    <section class="row"> 
       <div class="col-md-12">
         <h2>Front-end Skillset</h2>
       </div>
-      </div>
-    <div class="row">
+      </section>
+    <section class="row">
       <a data-target="#htmlmodal" data-toggle="modal">
       <div class="col-md-4"><img src="html-css.jpeg" class="img-responsive center-block" alt="image"><h3>
       HTML - CSS</h3>
@@ -62,7 +60,7 @@ Bootstrap element allowing for responsive resizing of the referenced images-->
       Bootstrap</h3>
       </div>
       </a>      
-  </div> 
+  </section> 
   </div>
 <!--The below section generates the pages modals. --> 
 <!-- Modal  Main Image-->
@@ -73,7 +71,7 @@ Bootstrap element allowing for responsive resizing of the referenced images-->
         <h4 class="modal-title" id="myModalLabel">Nic LoGalbo - Basic Front-end Skills Demo</h4>
       </div>
       <div class="modal-body">
-        <h4>
+        <p>
         <br>My name is Nic LoGalbo and thanks for checking out this simple demonstration of my newly acquired Front-end development skills.Through this page it is my objective to show a strong fundamental understanding of HTML/CSS, Responsive Design, and Bootstrap.  This
         page's HTML and CSS structure were verified using W3 validators found at the following links:
         <br>
@@ -85,7 +83,7 @@ Bootstrap element allowing for responsive resizing of the referenced images-->
         <br>
         This page is designed in the "Column Drop" responsive pattern with elements stacking one on top of the other at its most narrow view point. CSS4 media query elements are utilized to established stylistically necessary breakpoints, while the Bootstrap grid system creates the necessary columns and 
         rows to structurally support the site. 
-        </h4> 
+        </p> 
       </div>
       <div class="modal-footer">
         <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
@@ -102,10 +100,10 @@ Bootstrap element allowing for responsive resizing of the referenced images-->
         <h4 class="modal-title">Bootstrap</h4>
       </div>
       <div class="modal-body">
-        <h4>
+        <p>
           Bootstrap's gird template elements are utilized for the basic form and structure of this demo page. Additionally, the "img-responsive" 
           element was leveraged to dynamically resize images to ensure a truly responsive, and mobile first approach to this demo site.
-          </h4>
+          </p>
       </div>
       <div class="modal-footer">
         <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
@@ -123,11 +121,11 @@ Bootstrap element allowing for responsive resizing of the referenced images-->
         <h4 class="modal-title" >HTML5 & CSS4</h4>
       </div>
       <div class="modal-body">
-        <h4>
+        <p>
             This demo details fundamental mastery of both HTML5 and CSS4. The entire structure was built in HTML5, 
             while the styling is in a separate CSS file. Media queries are used for each established breakpoints built around
             the "Mobile First" paradigm. Font styling is the "Dosis" text from Google fonts.
-        .</h4>
+        .</p>
       </div>
       <div class="modal-footer">
         <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
@@ -145,7 +143,7 @@ Bootstrap element allowing for responsive resizing of the referenced images-->
         <h4 class="modal-title" id="redmodal">Responsive Design</h4>
       </div>
       <div class="modal-body">
-        <h4>
+        <p>
             This page utilizes the "Column Drop" responsive design pattern. At the sights narrowest viewport each of the 
             sites elements will stack one on top of the other.  As the site widens to the first breakpoint the elements
             realign to be next to each other up until 950 pixels at which point  the site content will stop expanding,  and static margins are added. 
@@ -162,7 +160,7 @@ Bootstrap element allowing for responsive resizing of the referenced images-->
             <br>
             <br> 
             <b>259px</b>- Arrow image and h2 disappears, h1 becomes center aligned.
-        </h4>
+        </p>
       </div>
       <div class="modal-footer">
         <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
@@ -170,5 +168,7 @@ Bootstrap element allowing for responsive resizing of the referenced images-->
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+<script type="text/javascript" src="js/jquery321.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>
